@@ -1,1 +1,1220 @@
-fghhghgdhf
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+
+    /*
+       int pKam=5;
+       int pOdkial=3;
+
+       printf("som na %d\n", pOdkial);
+       printf("som na %d\n", pKam);
+
+       printf("hodn1 %d hodn2 %d \n", pOdkial, pKam);
+
+    printf("ak je %d vyssie ako %d stlac sipku hore\n",pKam, pOdkial);
+    printf("ak je %d nizsie ako %d stlac sipku dole\n",pKam, pOdkial);
+     printf("pockaj na vytah\n");
+      printf("nastup do vytahu\n");
+       printf("vo vytahu stlac tlacidlo s cislom kam chces ist\n");
+        printf("pockaj kym vytah pride na miesto\n");
+         printf("vystup s vytahu\n");
+
+         char* pKam="domov";
+         char* pOdkial="skola";
+         printf("%s", pKam);
+       printf("%s", pOdkial);
+       printf("hodn1 %s hodn2 %s \n",pKam, pOdkial);
+
+
+    char* prvy = "Marian";
+       char* druhy = "Michal";
+       char* treti = "David";
+
+       printf("Prvy prisiel %s, druhy prisiel %s, treti prisiel %s.\n", prvy, druhy, treti);
+
+    int a=4,b=8,z=0;
+    z=(a>b)?(a+b):(b-a);
+    printf ("vysledok: %d\n",z);
+
+    int a=10,b=8;
+    (a>b)?printf("%d",a):printf("%d",b);
+
+
+    int a=5,b=10,z;
+    z=a+++ --b;
+
+
+    printf("prva operacia (a+++--b):z=%d,b=%d/n",z,a,b);
+
+    int cislo;
+    printf ("zadaj cislo");
+    scanf ("%d", & cislo);
+    printf ("%d", cislo);
+
+    int cislo;
+    int cislo1;
+    printf ("zadaj stranu");
+    scanf ("%d", & cislo1);
+    printf ("zadaj stranu");
+    scanf ("%d", & cislo);
+    printf ("%d", cislo* cislo1);
+
+    int hodina;
+    int minuty;
+    printf ("zadaj cas hodina:minuty ");
+    scanf ("%d:%d",&hodina,&minuty);
+    printf ("%d:%d" ,hodina, minuty);
+
+    int dd;
+    int mm;
+    int rrrr;
+    printf ("zadaj datum dd.mm.rrrr ");
+    scanf ("%d.%d.%d",&dd,&mm,&rrrr);
+    printf ("%d.%d.%d" ,dd, mm, rrrr);
+
+    char znak;
+    scanf ("%c",&znak);
+     printf ""
+
+     int stranaa;
+     int stranab;
+     int stranac;
+     printf ("zadajte stranu a");
+     scanf ("%d",&stranaa);
+     printf ("zadajte stranu b");
+     scanf ("%d",&stranab);
+      printf ("zadajte stranu c");
+      scanf ("%d",&stranac);
+      printf ("%d",stranaa*stranab*stranac);
+
+
+    char znak;
+    printf ("chces ist dnes zo skoly skor?[a/b]");
+    znak=getchar();
+    printf("zadal si: %c",znak);
+
+
+    char znak;
+    printf ("chces ist dnes zo skoly skor?[a/b]");
+    znak=getchar();
+    printf("zadal si:");
+    putchar (znak);
+
+    int cislo;
+    printf ("zadaj znak");
+    cislo=getchar();
+    printf("zadal si:");
+    printf ("%d", cislo);
+
+    char znak;
+    int celeCislo;
+
+    printf("komko mas dnes hodin?/n");
+    scanf("%d",&celeCislo);
+    printf("Chces ist dnes do skoly?");
+    scanf(" %c" ,&znak);
+    printf("dnes mas%d hodin a zadal si pre chces ist skor:",celeCislo);
+    putchar(znak);
+
+    int cislo;
+    printf ("zadaj znak");
+    cislo=getchar();
+    printf("zadal si:");
+    printf ("zadal si cislo %c\n",cislo);
+    printf ("mensie%c\n",--cislo);
+    printf ("vacsie%c",cislo+2);
+
+    int cislo;
+    printf ("zadaj cislo");
+    scanf("%d",&cislo);
+    printf ("zadal si cislo %x\n",cislo);
+
+    int cislo;
+    printf ("zadaj cislo");
+    scanf("%d",&cislo);
+    printf ("zadal si cislo %5d\n",cislo);
+
+    float cislo;
+    printf ("zadaj cislo");
+    scanf("%f",&cislo);
+    printf ("zadal si cislo %.5f\n",cislo);
+
+    int cislo;
+    printf ("zadaj cislo");
+    scanf("%f",&cislo);
+    printf ("stlpec\t,stlpec2\a");
+
+    char meno;
+    char priezvisko;
+    int vek;
+    int sila;
+    int mudrost;
+    float dlzka;
+
+    printf ("zadaj inicialu mena");
+    scanf("%c",&meno);
+    printf ("zadaj inicialu priezviska");
+    scanf(" %c",&priezvisko);
+    printf ("zadaj vek");
+    scanf("%d",&vek);
+    printf ("zadajte silu");
+    scanf("%d",&sila);
+    printf ("zadaj mudrost");
+    scanf("%d",&mudrost);
+    printf ("zadajte dlzku vyletu");
+    scanf("%f",&dlzka);
+    printf("volam sa %c %c , mam %d rokov , silu %d a mudrost %d vydava sa na cestu do neznama dlhu %f:",meno, priezvisko, vek, sila, mudrost, dlzka);
+
+    //printf ("DNES JE VLHKOST 75 %%");
+
+    int cislo;
+    scanf("%d",&cislo);
+    if (cislo==0)printf("je to k nicomu");
+    else printf ("vsetko je fajn");
+
+    int teren;
+    int obtiaznost;
+    char typ;
+    float rychlost;
+    int protivnici;
+
+    printf ("zadaj typ terenu 1-pust 2-ostrov 3-hory\n");
+    scanf("%d",&teren);
+    if (teren==1)printf("teren je zvoleny na pust\n");
+    else if (teren==2)printf("teren je zvoleny na ostrovy\n");
+    else if (teren==3)printf("teren je zvoleny na hory\n");
+    else printf ("error");
+
+    printf ("zadajte obtiaznost 1-10\n");
+    scanf("%d",&obtiaznost);
+    if (obtiaznost>=1 && obtiaznost<=10)printf("obtiaznost je zvolena na %d\n",obtiaznost );
+    else printf ("error");
+
+    printf ("zadajte typ hry p-politicke v-vojnov y-vyskumne\n");
+    scanf(" %c",&typ);
+    if (typ=='p')printf("typ hry je zvoleny na politicke\n");
+    else if (typ=='v')printf("typ hry je zvoleny na vojny\n");
+    else if (typ=='y')printf("typ hry je zvoleny na vyskumne\n");
+    else printf ("error");
+
+    printf ("zadajte rychlost menej ako 1- pomala viac ako 1- rychla\n");
+    scanf("%f",&rychlost);
+    if (rychlost==1)printf("obtiaznost je zvolena na normalna\n");
+    else if (rychlost<1)printf("obtiaznost je zvolena na pomala\n");
+    else if (rychlost>1)printf("obtiaznost je zvolena na rychla\n");
+    else printf ("error");
+
+    printf ("zadaj pocet protivnikov\n");
+    scanf("%d",&protivnici);
+    if (protivnici>=1)printf("pocet protivnikov je %d\n", protivnici);
+    else printf ("error");
+
+
+    int vek;
+    printf ("zadajte vas vek\n");
+    scanf("%d",&vek);
+    if (vek<=0)
+    {
+        printf("neznama hodnota\n");
+        return 0;
+    }
+
+    if (vek>=1 && vek<18) printf("pustim auticko\n");
+    else if (vek>=18 && vek<50) printf("ideme na dovolenku\n");
+    else printf("DOM\n");
+    printf("som na konci");
+
+
+    int teplota;
+    printf ("zadajte vonkajsiu teplotu\n");
+    scanf("%d",&teplota);
+    if (teplota>4)printf("zober tricko\n");
+    else printf("zober mikinu\n");
+
+    char pohlavie;
+    float hmotnost;
+    float vyska;
+    printf ("zadajte pohlave z/m \n");
+    scanf("%c",&pohlavie);
+    printf ("zadajte hmotnost v kg\n");
+    scanf("%f",&hmotnost);
+    printf ("zadajte vysku v metroch\n");
+    scanf("%f",&vyska);
+    if ( pohlavie=='z');
+    {
+        if (hmotnost/(vyska*vyska)<19)printf("podvaha\n");
+        if (hmotnost/(vyska*vyska)>=19 && hmotnost/(vyska*vyska)<23.9)printf("idealna vaha\n");
+        if (hmotnost/(vyska*vyska)>=24 && hmotnost/(vyska*vyska)<=28.9)printf("nadvaha\n");
+        if (hmotnost/(vyska*vyska)>=29 && hmotnost/(vyska*vyska)<=38.9)printf("obezita\n");
+        if (hmotnost/(vyska*vyska)>39)printf("tazka nadvaha\n");
+
+    }
+    if ( pohlavie=='m');
+    {
+        if (hmotnost/(vyska*vyska)<20)printf("podvaha\n");
+        if (hmotnost/(vyska*vyska)>=20 && hmotnost/(vyska*vyska)<24.9)printf("idealna vaha\n");
+        if (hmotnost/(vyska*vyska)>=25 && hmotnost/(vyska*vyska)<=29.9)printf("nadvaha\n");
+        if (hmotnost/(vyska*vyska)>=30 && hmotnost/(vyska*vyska)<=39.9)printf("obezita\n");
+        if (hmotnost/(vyska*vyska)>40)printf("tazka nadvaha\n");
+
+    }
+
+    //TEST
+    int kus;
+    printf ("zadajte pocet kusov\n");
+    scanf("%d", &kus);
+    printf("cena jedneho 5e \n");
+    printf("pocet kusov je je %d \n" , kus);
+    printf("celkova cena je %d e \n" , kus*5);
+
+    int cislo;
+    printf("zadaj cislo\n");
+    scanf("%d",&cislo);
+    if (cislo%2 == 0)printf("cislo je parne\n");
+    else printf("cislo je neparne\n");
+    if (cislo%5 == 0)printf("cislo je delitelne 5\n");
+
+    int stranaA;
+    int stranaB;
+    printf("zadaj stranu A\n");
+    scanf("%d",&stranaA);
+    printf("zadaj stranu B\n");
+    scanf("%d",&stranaB);
+    if (stranaA == stranaB)printf("stvorec\n");
+    else printf("obdlznik\n");
+
+    int stranaA;
+    int stranaB;
+    int stranaC;
+    printf("zadaj stranu A\n");
+    scanf("%d",&stranaA);
+    printf("zadaj stranu B\n");
+    scanf("%d",&stranaB);
+    printf("zadaj stranu C\n");
+    scanf("%d",&stranaC);
+    if (stranaA == stranaB && stranaB == stranaC)printf("kocka\n");
+    else printf("kvader\n");
+
+
+    int teplota;
+    printf("zadajte teplotu \n");
+    scanf("%d",&teplota);
+    if (teplota == 20)printf("udrziavame teplotu\n");
+    else if  (teplota < 20) printf("pridaj\n");
+     else if  (teplota > 20) printf("vypni\n");
+
+    int cislo;
+    printf("napis cislo \n");
+    scanf("%d",&cislo);
+    if (cislo%3==0 && cislo%7==0)printf("je delitelne\n");
+    else printf("neni delitelne\n");
+
+    int vyhra;
+    printf("napiste kolko si vyhral \n");
+    scanf("%d",&vyhra);
+    if (vyhra>=1 && vyhra <=1000)printf("peniaze miniem\n");
+    else if (vyhra>=1001 && vyhra <=5000)printf("idem na dovolenku\n");
+    else if (vyhra>=5001 && vyhra <=25000)printf("kupim auto\n");
+    else if (vyhra>=25001)printf("kupim si lodny kontajner\n");
+
+    int cislo;
+    printf("napis cislo 1-7\n");
+    scanf("%d",&cislo);
+    switch (cislo) {
+    case 1 : printf("je pondelokn");
+        break;
+    case 2 : printf("je utorok\n");
+    break;
+    case 3 : printf("je streda\n");
+    break;
+    case 4 : printf("je stvrtok\n");
+    break;
+    case 5 : printf("je piatok\n");
+    break;
+    case 6 : printf("je sobota\n");
+    break;
+    case 7 : printf("je nedela\n");
+    break;
+    default :  printf("nevydalo\n");
+    break;
+    }
+    switch (cislo) {
+     case 1 :
+
+    case 2 :
+
+    case 3 :
+
+    case 4 :
+
+    case 5 : printf("je pracovny tyzden\n");
+    break;
+    case 6 :
+
+    case 7 : printf("vikend\n");
+    break;
+    default :  printf("nevydalo\n");
+    break;
+
+    }
+
+    int mesiac;
+    printf("cislo mesiaca\n");
+    scanf("%d",&mesiac);
+    switch (mesiac) {
+
+    case 3 :
+
+    case 4 :
+
+    case 5 : printf("jar\n");
+    break;
+    case 6 :
+
+    case 7 :
+
+    case 8 :printf("leto\n");
+     break;
+    case 9 :
+
+    case 10 :
+
+    case 11 : printf("jesen\n");
+    break;
+    case 12 :
+
+    case 1 :
+
+    case 2 : printf("zima\n");
+     break;
+    default :  printf("nevydalo\n");
+    break;
+
+    }
+
+
+
+    int mesiac;
+    printf("cislo mesiaca\n");
+    scanf("%d",&mesiac);
+    switch (mesiac) {
+
+    case 3 ... 5 : printf("jar\n");
+    break;
+    case 6 ... 8 : printf("leto\n");
+    break;
+    case 9 ... 11 : printf("jesen\n");
+    break;
+
+    case 12 :
+
+    case 1 :
+
+    case 2 : printf("zima\n");
+     break;
+    default :  printf("nevydalo\n");
+    break;
+
+    }
+
+    int vek;
+    printf("vek\n");
+    scanf("%d",&vek);
+    if (vek> 60)printf("auto\n");
+    else switch (vek) {
+
+    case 0 ... 9 : printf("reklama na auto\n");
+    break;
+    case 10 ... 17 : printf("dron\n");
+    break;
+    case 18 ... 30 : printf("dovolenka\n");
+    break;
+    case 31 ... 60 : printf("dom\n");
+    break;
+    default :  printf("nevydalo\n");
+    break;
+    }
+
+    int ROZHODNUTIE;
+    printf("Co chce urobit\n registrovat 1\n dozvediet sa informacie 2\n chces s nami komunikovat 3\n prihlasit sa 4\n");
+    scanf("%d",&ROZHODNUTIE);
+    if (ROZHODNUTIE> 4 || ROZHODNUTIE<1)printf("error\n");
+    else switch (ROZHODNUTIE) {
+    case 1 : printf("zvolil si registrovat\n");
+    break;
+    case 2 : printf("zvolil si dozvediet sa informacie\n");
+    break;
+    case 3 : printf("zvolil si komuikovat s nami\n");
+    break;
+    case 4 : printf("zvolil si prihlasit sa\n");
+    break;
+
+    }
+
+
+    char ROZHODNUTIE;
+    printf("Co chce urobit\n registrovat R\n dozvediet sa informacie I\n chces s nami komunikovat K\n prihlasit sa P\n");
+    scanf("%c",&ROZHODNUTIE);
+    switch (ROZHODNUTIE) {
+    case 'r' :
+    case 'R' : printf("zvolil si registrovat\n");
+    break;
+    case 'i':
+    case 'I' : printf("zvolil si dozvediet sa informacie\n");
+    break;
+    case 'k' :
+    case 'K' : printf("zvolil si komuikovat s nami\n");
+    break;
+    case 'p' :
+    case 'P' : printf("zvolil si prihlasit sa\n");
+    break;
+    default :  printf("nevydalo\n");
+    break;
+    }
+
+    int ktore;
+    printf("Vyber co chces robt\n obsah 1\n obvod 2\n");
+    scanf("%d",&ktore);
+    if (ktore == 1)printf("obsah");
+    {
+        int tvar;
+        printf("Vyber tvar\n stvorec 1\n obdlznik 2\n kruh 3 \n pravouhly trojuholnik 4 \n");
+        scanf("%d",&tvar);
+        if (tvar == 1){
+                printf("stvorec");
+
+            int rozmer;
+            printf("napis stranu \n");
+            scanf("%d",&rozmer);
+            printf ("%d",rozmer*rozmer);
+
+        }
+        if (tvar == 2)
+        {
+            printf("obdlznik");
+
+            int rozmerA;
+            int rozmerB;
+            printf("napis stranu a \n");
+            printf("napis stranu b \n");
+            scanf("%d",&rozmerA);
+            scanf("%d",&rozmerB);
+            printf ("%d",2*(rozmerA*rozmerB));
+
+    }
+    if (tvar == 3)
+        {
+            printf("kruh");
+    }
+    }
+    if (ktore == 2)printf("obvod");
+
+    int stranaA;
+    printf("zadaj stranu A\n");
+    scanf("%d",&stranaA);
+    int stranaB;
+    printf("zadaj stranu B\n");
+    scanf("%d",&stranaB);
+    if (stranaA * stranaB > 100)printf("je to viac ako 100\n");
+    else if  (stranaA * stranaB < 99) printf("je menej ako 100\n");
+     else if  (stranaA * stranaB == 100) printf("je 100\n");
+        for (int i=0;i<10;i++)
+       { printf("*\n");
+     };
+
+     for (int i=0;i<5;i++)
+       { int strana;
+    printf("zadaj stranu\n");
+    scanf("%d",&strana);
+    if (strana>=10 && strana<=50) printf("je\n");
+    else printf("nieje\n");
+     };
+
+    char strana;
+    for (int i=0; i<7; i++)
+    {
+        printf("zadaj stranu\n");
+        scanf(" %c",&strana);
+        if (strana>='a' && strana<='z') printf("je\n");
+        else printf("nieje\n");
+    };
+
+     char strana;
+    for (int i=0; i<7; i++)
+    {
+        printf("zadaj stranu\n");
+        scanf(" %c",&strana);
+        if (strana>='a' && strana<='z') printf("je\n");
+        else printf("nieje\n");
+    };
+     int stranaA;
+     int stranaB;
+    for (int i=0; i<7; i++)
+    {
+        printf("zadaj stranuA\n");
+        scanf(" %d",&stranaA);
+         printf("zadaj stranuB\n");
+        scanf(" %d",&stranaB);
+        if (stranaA>stranaB)
+       printf ("%d" ,stranaA - stranaB);
+    else printf ("%d" ,stranaB - stranaA);
+
+    };
+    //TEST
+     int vek1;
+     printf ("zadajte vek surodenca\n");
+    scanf("%d",&vek1);
+    int vek2;
+     printf ("zadajte vek druheho surodenca\n");
+    scanf("%d",&vek2);
+    if (vek1 && vek2 <=0)printf("error\n");
+    else if (0<vek1 && vek2<6)printf("materska skola\n");
+    else if (5<vek1 && vek2<15)printf("zakladna skola\n");
+    else if (14<vek1 && vek2<20)printf("stredna skola\n");
+    else if (vek1 && vek2>20)printf("praca\n");
+
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+        printf("chcem prazdniny %d\n", i);
+
+
+
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=kolkokrat; i>0 ; i--)
+        printf("C.%d\n", i);
+
+
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat ; i= i+2)
+        printf("chcem prazdniny %d\n", i);
+
+
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+
+
+      int vek;
+    printf("vek\n");
+    scanf("%d",&vek);
+    switch (vek) {
+
+    case 0 ... 5 : printf("pracovny tyzden\n");
+    break;
+    case 6 : printf("sobota\n");
+    break;
+    case 7: printf("nedela\n");
+    break;
+
+    default :  printf("nevydalo\n");
+    break;
+    }
+    }
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+
+
+        int vek;
+        printf("vek\n");
+        scanf("%d",&vek);
+        switch (vek)
+        {
+        case 0 ... 6 :
+            printf("male dieta\n");
+            break;
+        case 7 ... 17 :
+            printf("dieta\n");
+            break;
+        case 18 ... 65:
+            printf("dospely\n");
+            break;
+    case 66 ... 110:
+            printf("senior\n");
+            break;
+
+        default :
+            printf("nevydalo\n");
+            break;
+
+        }
+    }
+
+    //int kolkokrat;
+    // printf("kolkokrat mam zopakovat?\n");
+    // scanf(" %d",&kolkokrat);
+    int kolkoh;
+    printf("kolkokrat mam * zopakovat?\n");
+    scanf(" %d",&kolkoh);
+
+    for (int i=0; i<kolkoh ; i++)
+    {
+        //vzpise *
+        for (int j=1; j<kolkoh + 1; j++)
+            printf("*");
+            //odriadkuje
+        printf("\n");
+    }
+
+    int kolkoh;
+    printf("kolkokrat mam * zopakovat?\n");
+    scanf(" %d",&kolkoh);
+
+    for (int i=0; i<kolkoh ; i++)
+    {
+        //vzpise *
+        for (int j=1; j<1+1 + 1; j++)
+            printf("*");
+            //odriadkuje
+        printf("\n");
+
+
+    }
+
+    //BUDES POTREBOVAT NA TEST
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+        int mesiac;
+        printf("aky mesiac (cislom)?\n");
+        scanf(" %d",&mesiac);
+        switch (mesiac)
+        {
+        case 1 :
+            printf("31dni\n");
+            break;
+        case 2 :
+            printf("28dni\n");
+            break;
+        case 3 :
+            printf("31dni\n");
+            break;
+        case 4 :
+            printf("30dni\n");
+            break;
+        case 5 :
+            printf("31dni\n");
+            break;
+        case 6 :
+            printf("30dni\n");
+            break;
+        case 7 :
+        case 8 :
+            printf("31dni\n");
+            break;
+        case 9 :
+            printf("30dni\n");
+            break;
+        case 10 :
+            printf("31dni\n");
+            break;
+        case 11 :
+            printf("30dni\n");
+            break;
+        case 12 :
+            printf("31dni\n");
+            break;
+        default :
+            printf("nevydalo\n");
+            break;
+        }
+    }
+
+    int kolkokrat;
+    int kasa;
+    printf("kolko je hostov?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+        int kolko;
+         printf("kolko plati jeden host?\n");
+    scanf(" %d",&kolko);
+    kasa= kasa + kolko;
+    printf("medzisucet %d\n",kasa);
+    }
+    printf("spolu platia %d\n",kasa);
+
+    int kolkokrat;
+    int MAX = 0;
+
+    printf("kolko je hostov?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+        int suma;
+        printf("kolko plati jeden host?\n");
+        scanf(" %d",&suma);
+    if (suma> MAX) MAX = suma;
+    }
+    printf("najviac je %d\n",MAX);
+    int kolkokrat;
+
+    //TEST
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+        int suma;
+        printf("od 1 do 20?\n");
+        scanf(" %d",&suma);
+        switch (suma)
+        {
+        case 1 :
+            printf("1 Euro\n");
+            break;
+        case 2 ... 4 :
+            printf("X Eura\n");
+            break;
+        case 5 ... 20 :
+            printf("X Eur\n");
+            break;
+        default :
+            printf("tuto hodnotu nevyhodnocujem\n");
+            break;
+        }
+    }
+
+
+    int cislo;
+    scanf(" %d",&cislo);
+    while (cislo>0)
+    {
+        printf ("cislo\n");
+        scanf(" %d",&cislo);
+    }
+
+
+
+    int kolkokrat;
+    printf("kolkokrat mam zopakovat?\n");
+    scanf(" %d",&kolkokrat);
+    for (int i=1; i<kolkokrat + 1 ; i++)
+    {
+        int ktore;
+        printf ("1 pre obsah\n 2 pre obvod\n");
+        scanf(" %d",&ktore);
+        if (ktore==1)
+        {
+            printf("obsah");
+
+            int stranaa;
+            int stranab;
+            printf ("strana a");
+            scanf(" %d",&stranaa);
+            printf ("strana b");
+            scanf(" %d",&stranab);
+            printf ("%d\n",stranaa * stranab );
+        }
+        if (ktore==2)
+        {
+            printf("obvod");
+            int stranaa;
+            int stranab;
+            printf ("strana a");
+            scanf(" %d",&stranaa);
+            printf ("strana b");
+            scanf(" %d",&stranab);
+            printf ("%d\n",2* (stranaa + stranab));
+        }
+    }
+
+
+    //TUNA
+    int cislo=1;
+    int max=0;
+
+    while (cislo>0)
+    {
+        scanf(" %d",&cislo);
+        if (cislo>max) max=cislo;
+        printf("\n najvyssie\n %d\n",max);
+
+    }
+
+    int cislo=1;
+
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0)
+    {
+
+        if (cislo<min) min=cislo;
+        printf("\n najvyssie\n %d\n",min);
+        scanf(" %d",&cislo);
+
+    }
+
+    int cislo=1;
+    int pocitadlo=0;
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0)
+    {
+
+        if (cislo<min) min=cislo;
+        printf("\n najvyssie\n %d\n",min);
+        scanf(" %d",&cislo);
+        pocitadlo++;
+    }
+    printf("pocet opakovani %d", pocitadlo );
+
+
+
+    int cislo=1;
+    int pocitadlo=0;
+    int kasa=0;
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0)
+    {
+
+        int kolko;
+         printf("znamka\n");
+    scanf(" %d",&kolko);
+    kasa= kasa + kolko;
+    printf("medzisucet %d\n",kasa);
+    if (kolko=0)return 0;
+
+        pocitadlo++;
+    }
+    printf("pocet opakovani %d", pocitadlo );
+
+
+
+
+    float cisloPI = 3.14; // Cislo Pi
+    float polomer, obsah;
+    printf("Zadajte polomer kruhu\n ");
+    scanf("%f", &polomer);
+    obsah = cisloPI * polomer * polomer;
+    printf("Obsah kruhu s polomerom %.2f je %.2f\n", polomer, obsah); // vypocet, 2f pre zaokrzhlenie na 2 des miesta
+
+
+
+    float cisloPI = 3.14; // Cislo Pi
+    float polomer, obsah;
+    for (int i=0;i<10;i++){
+    printf("Zadajte polomer kruhu\n ");
+    scanf("%f", &polomer);
+    obsah = cisloPI * polomer * polomer;
+    printf("Obsah kruhu s polomerom %.2f je %.2f\n", polomer, obsah); // vypocet, 2f pre zaokrzhlenie na 2 des miesta
+    }
+
+
+    float polomer;
+    float cislopi = 3.14;
+    printf("Zadaj polomer kruhu\n");
+    scanf("%f", &polomer);
+    while(polomer >0)
+    {
+    printf("Obsah kruhu je %.2f\n",polomer*polomer*cislopi);
+    printf("Zadaj polomer kruhu\n");
+    scanf("%f", &polomer);
+    }
+
+    float sucet = 0;
+    float polomer;
+    float obsah = 0;
+    float cislopi = 3.14;
+    printf("Zadaj polomer kruhu\n");
+    scanf("%f", &polomer);
+    while(polomer >0)
+    {
+    obsah= polomer*polomer*cislopi;
+    printf("Obsah kruhu je %.2f\n",obsah);
+    printf("Zadaj polomer kruhu\n");
+    scanf("%f", &polomer);
+    sucet= sucet + obsah;
+    printf ("%.2f\n", sucet);
+    }
+
+    float sucet = 0;
+    float polomer;
+    float obsah = 0;
+    float cislopi = 3.14;
+
+    do
+    {
+    printf("Zadaj polomer kruhu\n");
+    scanf("%f", &polomer);
+
+    obsah= polomer*polomer*cislopi;
+    printf("Obsah kruhu je %.2f\n",obsah);
+
+    sucet= sucet + obsah;
+    printf ("%.2f\n", sucet);
+    }while(polomer >0);
+
+    float priemer =0;
+    int pocitadlo=0;
+    float sucet = 0;
+    float polomer;
+    float obsah = 0;
+    float cislopi = 3.14;
+
+    do
+    {
+        printf("Zadaj polomer kruhu\n");
+        scanf("%f", &polomer);
+
+        obsah= polomer*polomer*cislopi;
+        printf("Obsah kruhu je %.2f\n",obsah);
+
+        sucet= sucet + obsah;
+        printf ("%.2f\n", sucet);
+
+        pocitadlo++;
+
+
+    }
+    while(polomer >0);
+    printf("pocet opakovani %d \n", pocitadlo-1 );
+    priemer = sucet / (pocitadlo-1);
+    printf("priemer je %.2f\n",priemer);
+    //Nedokoncene
+    int suma;
+    int pocitadlo = 0;
+    int medzisucet = 0;
+    printf("\n zadajte sumu splu\n");
+    scanf(" %d",&suma);
+    while (cislo>0)
+    {
+        int zaplati;
+        printf("\n jeden zaplati\n");
+        scanf(" %d",&zaplati);
+        if printf("\n zadajte sumu splu\n");
+    scanf(" %d",&suma);
+    if{
+    }     pocitadlo++;
+
+    }
+    printf("pocet opakovani %d", pocitadlo );
+
+
+
+    int cislo=1;
+    printf("Zadaj cislo\n");
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0 && 101>cislo)
+    {
+        printf("\n %d\n",cislo);
+        printf("Zadaj cislo\n");
+        scanf(" %d",&cislo);
+        if (cislo<min) min=cislo;
+        printf("\n najnizsie\n %d\n",min);
+    }
+
+
+    int pocitadlo=0;
+     int cislo=1;
+    printf("Zadaj cislo\n");
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0 && 101>cislo)
+    {
+        printf("\n %d\n",cislo);
+        printf("Zadaj cislo\n");
+        scanf(" %d",&cislo);
+        if (cislo<min) min=cislo;
+        printf("\n najnizsie\n %d\n",min);
+         pocitadlo++;
+    }
+    printf("pocet opakovani %d\n", pocitadlo);
+
+    int sucet=0;
+    int pocitadlo=0;
+     int cislo=1;
+    printf("Zadaj cislo\n");
+    scanf(" %d",&cislo);
+    int min=cislo;
+    while (cislo>0 && 101>cislo)
+    {   sucet= sucet+ cislo;
+        printf("\n %d\n",cislo);
+        printf("Zadaj cislo\n");
+        scanf(" %d",&cislo);
+        if (cislo<min) min=cislo;
+        printf("\n najnizsie\n %d\n",min);
+         pocitadlo++;
+
+    }
+    printf("pocet opakovani %d\n", pocitadlo);
+      printf("sucet je %d\n", sucet);
+
+    float sucet=0;
+    float pocitadlo=0;
+    float cislo=1;
+    float priemer;
+    printf("Zadaj cislo\n");
+    scanf(" %2f",&cislo);
+    float min=cislo;
+    while (cislo>0 && 101>cislo)
+    {
+        sucet= sucet+ cislo;
+        printf("\n %f\n",cislo);
+        printf("Zadaj cislo\n");
+        scanf(" %f",&cislo);
+        if (cislo<min) min=cislo;
+        printf("\n najnizsie\n %f\n",min);
+        pocitadlo++;
+
+    }
+    priemer= sucet/pocitadlo;
+    printf("pocet opakovani %f\n", pocitadlo);
+    printf("sucet je %f\n", sucet);
+    printf("priemer %f\n", priemer);
+    //TEST
+    {
+     int pocitadlo1=0;
+     int pocitadlo2=0;
+     int cislo=1;
+    printf("Zadaj cislo (funguje az od druheho cisla)\n");
+    scanf(" %d",&cislo);
+    while (cislo>0 || cislo<0)
+    {
+        printf("\n %d\n",cislo);
+        printf("Zadaj cislo\n");
+        scanf(" %d",&cislo);
+        if (cislo<0){ ;
+         printf("debet\n");
+         pocitadlo1++;}
+         if (cislo>0){ ;
+          printf("kredit\n");
+         pocitadlo2++;}
+    }
+    printf("pocet opakovani kreditu %d\n", pocitadlo1);
+    printf("pocet opakovani debetu %d\n", pocitadlo2);
+
+    int cislo=0;
+    srand (0);
+    cislo= rand();
+    for (int i=0;i<100;i++);
+    printf("%d\n", rand()%100);
+
+    FILE* hsubor1;
+    FILE* hsubor2;
+    char znak = 'a';
+
+    hsubor1 = fopen("PAPIER.txt", "r");
+    hsubor2 = fopen("novy.txt", "w");
+    do
+    {
+        znak = fgetc(hsubor1);
+        fputc(znak,hsubor2);
+    }
+    while (znak!=EOF);
+    fclose(hsubor1);
+    fclose(hsubor2);
+
+
+    FILE* hsubor;
+    int cislo;
+    hsubor = fopen("novycisla.txt", "w");
+    srand(time(0));
+    for (int i=0;i<100;i++){
+        cislo = rand();
+        fprintf(hsubor,"cislo %d \n",cislo);
+    }
+    fclose(hsubor);
+
+    char znak;
+    int posun;
+    FILE *vstupnySubor;
+    FILE *vystupnySubor;
+    vstupnySubor = fopen("vstup.txt", "r");
+    vystupnySubor = fopen("zakodovany.txt", "w");
+
+    printf("Zadaj posun: ");
+    scanf("%d", &posun);
+
+
+    while ((znak = fgetc(vstupnySubor)) != EOF) {
+    fputc(znak + posun, vystupnySubor);
+    }
+
+
+    fclose(vstupnySubor);
+    fclose(vystupnySubor);
+
+    printf("Zakodovanie hotove. Vystupny subor je zakodovany.txt\n");
+
+
+    FILE *subor;
+    int cislo;
+    int cislo1;
+    int pocet = 0;
+
+
+    printf("Zadaj cislo od 1 do 49: ");
+    scanf("%d", &cislo);
+
+    subor = fopen("lotoVstup.txt", "r");
+
+    while (fscanf(subor, "%d", &cislo1) != EOF)
+    {
+        if (cislo1 == cislo)
+        {
+            pocet++;
+        }
+    }
+
+
+    fclose(subor);
+
+
+    printf("Cislo %d sa vyskytuje v subore %d-krat.\n", cislo, pocet);
+*/
+  FILE *subor;
+    FILE *vystup;
+    int cislo, aktualne, pocet;
+
+    subor = fopen("lotoVstup.txt", "r");
+    vystup = fopen("statistikaLoto.txt", "w");
+
+    cislo = 1;
+    while (cislo <= 49)
+    {
+        fclose(subor);
+        subor = fopen("lotoVstup.txt", "r");
+
+        pocet = 0;
+
+        while (fscanf(subor, "%d", &aktualne) == 1)
+        {
+            if (aktualne == cislo)
+            {
+                pocet = pocet + 1;
+            }
+        }
+
+        printf("Cislo %d sa vyskytuje %d-krat.\n", cislo, pocet);
+        fprintf(vystup, "Cislo ");
+        fprintf(vystup, "%d", cislo);
+        fprintf(vystup, " sa vyskytuje ");
+        fprintf(vystup, "%d", pocet);
+        fprintf(vystup, "-krat.\n");
+
+        cislo = cislo + 1;
+    }
+
+    fclose(subor);
+    fclose(vystup);
+
+
+    return 0;
+}
